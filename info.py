@@ -24,9 +24,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/df9028345171dbc5e1145.jpg https://telegra.ph/file/3477c13238237d6d93c10.jpg https://telegra.ph/file/d263212ac838c20a295b8.jpg https://telegra.ph/file/6d00efcb5137dd4e85675.jpg https://telegra.ph/file/d632316c515d359bad483.jpg https://telegra.ph/file/879e64adec68169c0145a.jpg https://telegra.ph/file/4e6630717c8b7a0618c73.jpg https://telegra.ph/file/f52a67f4cca2a85b3d422.jpg https://telegra.ph/file/48384f3165a9a79d9a9b9.jpg https://telegra.ph/file/6d327de0775d9497b1c09.jpg https://telegra.ph/file/60392e5232a37ff9f442d.jpg https://telegra.ph/file/99c77d0d2db3b42615139.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', '')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
+MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/recovery_master_link")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
@@ -41,12 +41,12 @@ auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe chann
 auth_grp = environ.get('AUTH_GROUP', '') # give your force subscribe group id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002141929711')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001990567350')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002096021196')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
@@ -67,9 +67,9 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'emonfx7') # owner username witho
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_mods')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Ordinary_Bots')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_To_Open_Linkl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'movie_mods') # Support Chat Link Without https:// or @
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/recovery_master_link')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/recovery_master_link')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'emonfx7') # Support Chat Link Without https:// or @
 
 # True Or False
 PM_SEARCH = bool(environ.get('PM_SEARCH', True)) # In Pm Search Currently Spell Check Doesn't Work.
@@ -92,8 +92,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Shortlink Info
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'nanolinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '7396e0454d19110a0a3ce755474a8798332d974c')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
