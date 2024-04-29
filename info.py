@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', '')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/d263212ac838c20a295b8.jpg https://telegra.ph/file/3477c13238237d6d93c10.jpg https://telegra.ph/file/6d00efcb5137dd4e85675.jpg https://telegra.ph/file/d632316c515d359bad483.jpg https://telegra.ph/file/879e64adec68169c0145a.jpg https://telegra.ph/file/4e6630717c8b7a0618c73.jpg https://telegra.ph/file/f52a67f4cca2a85b3d422.jpg https://telegra.ph/file/48384f3165a9a79d9a9b9.jpg https://telegra.ph/file/61ee60ff91f1f2f4aacc4.jpg https://telegra.ph/file/0323191c06e2330443f8d.jpg https://telegra.ph/file/6d327de0775d9497b1c09.jpg https://telegra.ph/file/a6c282f17802c21269a62.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/recovery_master_link")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -73,7 +73,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'emonfx7') # Support Chat Link Withou
 
 # True Or False
 PM_SEARCH = bool(environ.get('PM_SEARCH', True)) # In Pm Search Currently Spell Check Doesn't Work.
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
 VERIFY = bool(environ.get('VERIFY', False))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -92,8 +92,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Shortlink Info
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'nanolinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '7396e0454d19110a0a3ce755474a8798332d974c')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -111,9 +111,9 @@ EPISODES = ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10"
 QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 
 
-                           # Don't Remove Credit @VJ_Botz
+                           # Don't Remove Credit @movie_mods
                            # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-                           # Ask Doubt on telegram @KingVJ01
+                           # Ask Doubt on telegram @emonfx7
 
 
 # Online Stream and Download
@@ -148,6 +148,6 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 
-# Don't Remove Credit @VJ_Botz
+# Don't Remove Credit @movie_mods
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Ask Doubt on telegram @emonfx7
